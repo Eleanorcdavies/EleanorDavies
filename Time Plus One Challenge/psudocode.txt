@@ -1,0 +1,39 @@
+#h, #m, #s
+whatever the user gives you, return plus one second
+midnight is 0h0m0s
+ 
+--get user input for time--
+ask for h
+ask for m
+ask for s
+---check input is valid---(if the user enters anything other than  an int)
+If input type is an int:
+    if they enter m OR s over 59
+      error message
+    elif the h input is greater than 23:
+      error message
+    else:
+      continue
+else: if it is not a valid type (Int)
+    error message
+ 
+--add one second—
+if h input is 23 AND m input is 59 AND s input is 59:
+  print 0h0m0s
+elif the seconds input is 59
+  reset s to 0,  rename it newS
+  add one to m, rename it newM    
+  if newM is 60
+    reset newM to 0
+    add one to h, rename it newH
+    print newH,newM,newS
+  else:
+     print H(initial input),newM,newS
+else:
+  add one to s input, rename newS
+  print h, m, newS
+         
+                
+get user input h m s
+run valid input function
+run add second function
